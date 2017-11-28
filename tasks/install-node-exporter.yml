@@ -62,7 +62,6 @@
         repo: "{{ prometheus_node_exporter_git_url }}"
         dest: "{{ prometheus_node_exporter_src_path }}"
         force: yes
-        version: v0.14.0
     - name: build node_exporter source code
       command: make
       args:
